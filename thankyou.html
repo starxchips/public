@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="logo">Nida Apa</a>
+    <button id="menu-toggle">&#9776;</button>
+    <div id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div id="main-text">
+    <h1>Thank you for reaching out!</h1>
+    <p>Your form has been submitted successfully.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+  
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+
+</body>
+</html>
